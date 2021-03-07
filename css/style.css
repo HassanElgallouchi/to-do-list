@@ -20,12 +20,25 @@ ul {
 }
 .container {
   width: 360px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 5rem auto 0;
+  border: 3px solid var(--colorBackground);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 .header-list {
   background-color: var(--colorBackground);
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-list i {
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
 }
 .header-list a {
   text-decoration: none;
@@ -34,6 +47,8 @@ ul {
 .body-list {
   padding: 1rem;
   background-color: #fff;
+  height: 25rem;
+  overflow: auto;
 }
 .items-list li {
   padding: 1rem 0;
@@ -41,13 +56,15 @@ ul {
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
 }
-
 .items-list li p {
   display: flex;
   align-items: baseline;
   cursor: pointer;
   text-transform: capitalize;
   width: 90%;
+}
+.items-list li p input[type="radio"] {
+  margin-right: 0.5rem;
 }
 .items-list li i {
   color: red;
@@ -58,12 +75,13 @@ ul {
   display: none;
 }
 .items-list li:hover i {
-    display: flex;
+  display: flex;
 }
-
 form {
   padding: 1rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 form input[type="text"] {
   padding: 1rem;
@@ -78,10 +96,16 @@ form input[type="text"] {
   -o-border-radius: 5rem;
 }
 form input[type="text"]:focus {
-    outline: none;
+  outline: none;
 }
 form > i {
-    font-size: 3rem;
-    color: var(--colorLien);
-    margin-left: .5rem;
+  font-size: 3rem;
+  color: var(--colorLien);
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+form > i:hover,
+form > i:focus,
+form > i:active {
+  color: var(--colorHover);
 }
