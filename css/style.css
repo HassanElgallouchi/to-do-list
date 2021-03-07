@@ -1,0 +1,87 @@
+:root {
+  --colorBackgroundBody: #e9e9e9;
+  --colorBackground: #10ac84;
+  --colorText: #555555;
+  --colorLien: #10ac84;
+  --colorHover: #1dd1a1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: var(--colorBackgroundBody);
+  color: var(--colorText);
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 360px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.header-list {
+  background-color: var(--colorBackground);
+  padding: 1rem;
+}
+.header-list a {
+  text-decoration: none;
+  color: #fff;
+}
+.body-list {
+  padding: 1rem;
+  background-color: #fff;
+}
+.items-list li {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.items-list li p {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 90%;
+}
+.items-list li i {
+  color: red;
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  display: none;
+}
+.items-list li:hover i {
+    display: flex;
+}
+
+form {
+  padding: 1rem;
+  display: flex;
+}
+form input[type="text"] {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--colorText);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+form input[type="text"]:focus {
+    outline: none;
+}
+form > i {
+    font-size: 3rem;
+    color: var(--colorLien);
+    margin-left: .5rem;
+}
