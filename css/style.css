@@ -109,3 +109,8 @@ form > i:focus,
 form > i:active {
   color: var(--colorHover);
 }
+
+
+.completed {
+  display: none;
+}
