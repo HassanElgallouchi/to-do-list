@@ -44,6 +44,9 @@ ul {
   text-decoration: none;
   color: #fff;
 }
+.header-list .fas.fa-arrow-left {
+  font-size: 1.2rem;
+}
 .body-list {
   padding: 1rem;
   background-color: #fff;
